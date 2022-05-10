@@ -1,0 +1,57 @@
+
+server:
+  # 服务端口
+  port: 8000
+
+spring:
+  application:
+    # 应用名称
+    name: msa-showcase
+  # 激活的属性配置文件
+  profiles:
+    active: dev,sentinel
+
+  cloud:
+    nacos:
+      # 是否启动nacos注册中心
+      discovery:
+        enabled: true
+      # 是否启动nacos配置中心
+      config:
+        enabled: false
+    # 是否启动sentinel
+    sentinel:
+      enabled: true
+
+eureka:
+  client:
+    # 是否启用eureka
+    enabled: false
+
+
+# 启动 feign http客户端为okhttp
+feign:
+  okhttp:
+    enabled: true
+
+# 日志级别配置
+logging:
+  level:
+    root: debug
+    com.alibaba.nacos.client: DEBUG
+    com.albusxing.msa: INFO
+
+# 暴露端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+
+ribbon:
+  # 更换 Ribbon 负载均衡策略
+  NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule
+

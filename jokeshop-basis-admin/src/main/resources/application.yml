@@ -1,0 +1,28 @@
+# 应用名称
+spring:
+  application:
+    name: basis-admin
+
+server:
+  port: 9030
+
+
+  cloud:
+    nacos:
+      # 注册到nacos中
+      discovery:
+        server-addr: 127.0.0.1:8848
+        username: nacos
+        password: nacos
+
+
+
+# 暴露端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always

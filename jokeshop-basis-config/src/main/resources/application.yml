@@ -1,0 +1,15 @@
+# 应用名称
+spring:
+  application:
+    name: basis-config
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath: /configs
+  profiles:
+    # 基于本地文件搭建配置中心
+    active: native
+server:
+  port: 9040
+

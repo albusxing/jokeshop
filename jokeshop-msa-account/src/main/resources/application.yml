@@ -1,0 +1,38 @@
+
+server:
+  # 服务端口
+  port: 8010
+
+spring:
+  application:
+    # 应用名称
+    name: msa-account
+  profiles:
+    active: dev,eureka,nacos
+
+  cloud:
+    nacos:
+      # 是否注册到 nacos
+      discovery:
+        enabled: true
+
+eureka:
+  client:
+    # 是否注册到 eureka
+    enabled: false
+
+# 日志级别配置
+logging:
+  level:
+    com.alibaba.nacos.client: DEBUG
+    com.albusxing.msa: INFO
+
+# 暴露端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always

@@ -1,0 +1,63 @@
+server:
+  port: 9020
+spring:
+  application:
+    name: basis-gateway
+  cloud:
+    gateway:
+      discovery:
+        # 启用服务发现机制
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      httpclient:
+        connect-timeout: 1200
+      routes:
+        - id: msa-user
+          uri: lb://msa-user
+          predicates:
+            - Path=/user/**
+          filters:
+            - PrefixPath=/api
+        - id: msa-order
+          uri: lb://msa-order
+          predicates:
+            - Path=/order/**
+          filters:
+            - PrefixPath=/api
+        - id: msa-goods
+          uri: lb://msa-goods
+          predicates:
+            - Path=/goods/**
+          filters:
+            - PrefixPath=/api
+    nacos:
+      # 是否注册到 nacos
+      discovery:
+        enabled: true
+  profiles:
+    # 激活的属性配置文件
+    active: nacos,eureka
+eureka:
+  client:
+    # 是否注册到 eureka
+    enabled: false
+
+
+
+# 日志级别配置
+logging:
+  level:
+    org.springframework.cloud.gateway: debug
+    com.alibaba.nacos.client: DEBUG
+    com.albusxing.msa: INFO
+
+# 暴露端点
+management:
+  endpoints:
+    web:
+      exposure:
+        inclue: '*'
+  endpoint:
+    health:
+      show-details: always

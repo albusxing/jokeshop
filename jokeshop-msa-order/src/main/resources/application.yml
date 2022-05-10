@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: msa-order
+  profiles:
+    active: dev
+  cloud:
+    # spring cloud config 配置
+    config:
+      enabled: true
+      uri: http://localhost:9040
+
