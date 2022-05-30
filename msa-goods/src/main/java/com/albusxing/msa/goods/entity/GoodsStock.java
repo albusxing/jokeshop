@@ -1,14 +1,11 @@
 package com.albusxing.msa.goods.entity;
 
-import com.albusxing.msa.common.base.BaseEntity;
-
-import java.io.Serializable;
 
 /**
  * @author Albusxing
  * @created 2022/3/12
  */
-public class GoodsStock extends BaseEntity {
+public class GoodsStock {
 
 	private Long goodsId;
 	private Long skuId;

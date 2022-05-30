@@ -90,11 +90,11 @@
         <!-- 模块依赖开始 -->
         <dependency>
             <groupId>com.albusxing</groupId>
-            <artifactId>jokeshop-msa-common</artifactId>
+            <artifactId>msa-common</artifactId>
         </dependency>
         <dependency>
             <groupId>com.albusxing</groupId>
-            <artifactId>jokeshop-msa-feign</artifactId>
+            <artifactId>msa-feign</artifactId>
         </dependency>
         <!-- 模块依赖结束 -->
 

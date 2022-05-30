@@ -7,7 +7,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**
  *
- * 开启注册中心客户端：@EnableDiscoveryClient}、@EnableEurekaClient
+ * 开启注册中心客户端：@EnableDiscoveryClient、@EnableEurekaClient
  * 开发声明式Feign调用
  * @author Albusxing
  * @created 2022/3/7

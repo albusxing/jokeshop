@@ -27,6 +27,8 @@ eureka:
     # 是否启用自我保护模式
     enable-self-preservation: false
     wait-time-in-ms-when-sync-empty: 0
+    # 移除失效服务的间隔时间，单位毫秒
+    eviction-interval-timer-in-ms: 5000
 
 # 日志级别
 logging:

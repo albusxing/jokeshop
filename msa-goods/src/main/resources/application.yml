@@ -1,10 +1,10 @@
 spring:
   application:
-    name: msa-order
+    name: msa-goods
 
 server:
   # 服务端口
-  port: 8010
+  port: 8020
 
 ### Eureka配置
 eureka:
