@@ -8,8 +8,7 @@
 		<version>1.0.0</version>
 	</parent>
 
-	<artifactId>jokeshop-basis-zuul</artifactId>
-	<name>jokeshop-basis-zuul</name>
+	<artifactId>basis-zuul</artifactId>
 
 	<description>Demo project for Spring Boot</description>
 

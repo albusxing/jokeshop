@@ -10,20 +10,21 @@
     <version>1.0.0</version>
 
     <modules>
-        <module>jokeshop-basis-gateway</module>
-        <module>jokeshop-basis-auth</module>
-        <module>jokeshop-basis-eureka</module>
-        <module>jokeshop-basis-zuul</module>
-        <module>jokeshop-basis-admin</module>
-        <module>jokeshop-basis-config</module>
+        <!-- 基础设施 -->
+        <module>basis-auth</module>
+        <module>basis-eureka</module>
+        <module>basis-zuul</module>
+        <module>basis-admin</module>
+        <module>basis-config</module>
 
-        <module>jokeshop-msa-common</module>
-        <module>jokeshop-msa-feign</module>
+        <module>msa-common</module>
+        <module>msa-feign</module>
 
-        <module>jokeshop-msa-goods</module>
-        <module>jokeshop-msa-order</module>
-        <module>jokeshop-msa-account</module>
-        <module>jokeshop-msa-showcase</module>
+        <!-- 业务服务 -->
+        <module>msa-goods</module>
+        <module>msa-order</module>
+        <module>msa-account</module>
+        <module>msa-showcase</module>
 
     </modules>
 

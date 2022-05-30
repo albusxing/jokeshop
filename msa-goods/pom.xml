@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>jokeshop-msa-common</artifactId>
+    <artifactId>msa-goods</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -17,15 +17,17 @@
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus-boot-starter</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-        </dependency>
 
+        <!-- 项目模块依赖开始 -->
+        <dependency>
+            <groupId>com.albusxing</groupId>
+            <artifactId>jokeshop-msa-common</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.albusxing</groupId>
+            <artifactId>jokeshop-msa-feign</artifactId>
+        </dependency>
+        <!-- 项目模块依赖结束 -->
 
     </dependencies>
 

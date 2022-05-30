@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>jokeshop-msa-showcase</artifactId>
+    <artifactId>msa-showcase</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>

@@ -9,7 +9,7 @@
         <version>1.0.0</version>
     </parent>
 
-    <artifactId>jokeshop-basis-config</artifactId>
+    <artifactId>basis-config</artifactId>
 
     <dependencies>
 
