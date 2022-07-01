@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>jokeshop-msa-goods</artifactId>
+    <artifactId>msa-goods</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -21,11 +21,11 @@
         <!-- 项目模块依赖开始 -->
         <dependency>
             <groupId>com.albusxing</groupId>
-            <artifactId>jokeshop-msa-common</artifactId>
+            <artifactId>msa-common</artifactId>
         </dependency>
         <dependency>
             <groupId>com.albusxing</groupId>
-            <artifactId>jokeshop-msa-feign</artifactId>
+            <artifactId>msa-feign</artifactId>
         </dependency>
         <!-- 项目模块依赖结束 -->
 
