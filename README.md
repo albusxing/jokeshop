@@ -1,6 +1,6 @@
 
 # JokeShop
-> SpringCloud的学习案例项目
+> SpringCloudAlibaba的学习案例项目
 
 
 - Swagger地址：http://127.0.0.1:8010/swagger-ui/index.html#
