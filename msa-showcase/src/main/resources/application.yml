@@ -9,24 +9,31 @@ spring:
     name: msa-showcase
   # 激活的属性配置文件
   profiles:
-    active: dev,sentinel
+    active: dev
 
-  cloud:
-    nacos:
-      # 是否启动nacos注册中心
-      discovery:
-        enabled: true
-      # 是否启动nacos配置中心
-      config:
-        enabled: false
-    # 是否启动sentinel
-    sentinel:
-      enabled: true
-
+### Eureka配置
 eureka:
+  # eureka实例相关的配置
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${spring.cloud.client.ip-address}:${server.port}
+    # 租约超时时间间隔，秒
+    lease-expiration-duration-in-seconds: 90
+    # 发送心跳时间间隔，秒
+    lease-renewal-interval-in-seconds: 30
+    metadata-map:
+      developer: albusxing
+  # eureka客户端相关的配置
   client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+    # 开启健康检查
+    healthcheck:
+      enabled: true
     # 是否启用eureka
-    enabled: false
+    enabled: true
+    # 服务抓取时间间隔
+    registry-fetch-interval-seconds: 30
 
 
 # 启动 feign http客户端为okhttp
@@ -37,8 +44,7 @@ feign:
 # 日志级别配置
 logging:
   level:
-    root: debug
-    com.alibaba.nacos.client: DEBUG
+    root: INFO
     com.albusxing.msa: INFO
 
 # 暴露端点

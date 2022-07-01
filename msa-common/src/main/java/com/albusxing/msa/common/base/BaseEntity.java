@@ -14,7 +14,7 @@ public class BaseEntity implements Serializable {
 
 	@TableId(value = "id", type = IdType.AUTO)
 	private Long id;
-	private Integer deleted;
+	private Integer status;
 	private LocalDateTime createTime;
 	private LocalDateTime updateTime;
 }

@@ -67,25 +67,12 @@
             <artifactId>springfox-boot-starter</artifactId>
         </dependency>
 
-        <!-- 引入 nacos 注册中心-->
-        <dependency>
-            <groupId>com.alibaba.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
-        </dependency>
-        <!-- 引入 nacos 配置中心-->
-        <dependency>
-            <groupId>com.alibaba.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
-        </dependency>
-
-
         <!-- 服务监控开始 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
         <!-- 服务监控结束 -->
-
 
         <!-- 模块依赖开始 -->
         <dependency>

@@ -32,6 +32,14 @@ public class UserController {
 		return ResponseEntity.ok().build();
 	}
 
+
+	@ApiOperation(value = "更新用户")
+	@PutMapping("/users")
+	public ResponseEntity<Void> update(@RequestBody @Valid User user) {
+		userService.save(user);
+		return ResponseEntity.ok().build();
+	}
+
 	@ApiOperation(value = "获取用户详情")
 	@GetMapping("/users/{id}")
 	public ResponseEntity<User> findById(@PathVariable("id") Long id) {
@@ -41,7 +49,7 @@ public class UserController {
 
 	@ApiOperation(value = "查询用户列表")
 	@GetMapping("/users")
-	public ResponseEntity<List<User>> listUsers() {
+	public ResponseEntity<List<User>> listUsers(@RequestParam("username") String username) {
 		QueryWrapper<User> queryWrapper = new QueryWrapper<User>();
 		List<User> result = userService.list(queryWrapper);
 		return ResponseEntity.ok().body(result);

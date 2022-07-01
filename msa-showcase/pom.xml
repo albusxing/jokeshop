@@ -24,10 +24,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-        </dependency>
         <!-- web服务依赖结束-->
 
 
@@ -56,16 +52,6 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
-        <!-- 注册中心 -->
-        <dependency>
-            <groupId>com.alibaba.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
-        </dependency>
-        <!-- 配置中心 -->
-        <dependency>
-            <groupId>com.alibaba.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
-        </dependency>
         <!-- 负载均衡 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -75,16 +61,6 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-openfeign</artifactId>
-        </dependency>
-        <!-- 流量控制 -->
-        <dependency>
-            <groupId>com.alibaba.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
-        </dependency>
-        <!-- 流控规则持久化到nacos -->
-        <dependency>
-            <groupId>com.alibaba.csp</groupId>
-            <artifactId>sentinel-datasource-nacos</artifactId>
         </dependency>
         <!-- 替换 OpenFeign使用的Http客户端 -->
         <dependency>
@@ -118,11 +94,11 @@
         <!-- 项目模块依赖开始 -->
         <dependency>
             <groupId>com.albusxing</groupId>
-            <artifactId>jokeshop-msa-common</artifactId>
+            <artifactId>msa-common</artifactId>
         </dependency>
         <dependency>
             <groupId>com.albusxing</groupId>
-            <artifactId>jokeshop-msa-feign</artifactId>
+            <artifactId>msa-feign</artifactId>
         </dependency>
         <!-- 项目模块依赖结束 -->
 
