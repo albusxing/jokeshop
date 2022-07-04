@@ -26,6 +26,11 @@
         </dependency>
         <!-- web服务依赖结束-->
 
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+
 
         <!-- 工具依赖开始-->
         <dependency>
@@ -43,8 +48,6 @@
             <optional>true</optional>
         </dependency>
         <!-- 工具依赖结束-->
-
-
 
         <!-- SpringCloud依赖开始-->
         <!-- 注册中心 -->
@@ -82,7 +85,6 @@
         <!-- SpringCloud依赖结束 -->
 
 
-
         <!-- 服务监控开始 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -90,17 +92,11 @@
         </dependency>
         <!-- 服务监控结束 -->
 
-
-        <!-- 项目模块依赖开始 -->
         <dependency>
             <groupId>com.albusxing</groupId>
-            <artifactId>msa-common</artifactId>
+            <artifactId>msa-account-api</artifactId>
+            <version>${project.version}</version>
         </dependency>
-        <dependency>
-            <groupId>com.albusxing</groupId>
-            <artifactId>msa-feign</artifactId>
-        </dependency>
-        <!-- 项目模块依赖结束 -->
 
     </dependencies>
 

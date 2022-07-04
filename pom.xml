@@ -18,8 +18,6 @@
         <module>basis-config</module>
 
         <module>msa-common</module>
-        <module>msa-feign</module>
-
         <!-- 业务服务 -->
         <module>msa-goods</module>
         <module>msa-order</module>
@@ -37,9 +35,8 @@
         <java.version>1.8</java.version>
         <spring-boot.version>2.3.7.RELEASE</spring-boot.version>
         <spring-cloud.version>Hoxton.SR9</spring-cloud.version>
-        <spring-cloud-alibaba.version>2.2.1.RELEASE</spring-cloud-alibaba.version>
         <lombok.version>1.18.22</lombok.version>
-        <mybatis-plus.version>3.5.1</mybatis-plus.version>
+        <mybatis-plus.version>3.5.2</mybatis-plus.version>
         <swagger.version>2.9.2</swagger.version>
 
     </properties>
@@ -80,6 +77,16 @@
                 <artifactId>mybatis-plus-boot-starter</artifactId>
                 <version>${mybatis-plus.version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-generator</artifactId>
+                <version>${mybatis-plus.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.velocity</groupId>
+                <artifactId>velocity-engine-core</artifactId>
+                <version>2.3</version>
+            </dependency>
 
             <!-- spring boot admin-->
             <dependency>
@@ -118,11 +125,6 @@
             <dependency>
                 <groupId>com.albusxing</groupId>
                 <artifactId>msa-common</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.albusxing</groupId>
-                <artifactId>msa-feign</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <!-- 模块依赖结束 -->

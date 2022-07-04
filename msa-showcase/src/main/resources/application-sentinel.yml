@@ -1,6 +1,0 @@
-spring:
-  cloud:
-    sentinel:
-      transport:
-        dashboard: 127.0.0.1:9100
-      eager: true

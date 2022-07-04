@@ -1,11 +1,9 @@
 package com.albusxing.msa.showcase.health;
 
-import com.albusxing.msa.showcase.health.ServiceHealthIndicator;
 import com.netflix.appinfo.HealthCheckHandler;
 import com.netflix.appinfo.InstanceInfo;
 import org.springframework.boot.actuate.health.Status;
 import org.springframework.stereotype.Component;
-
 import javax.annotation.Resource;
 
 /**

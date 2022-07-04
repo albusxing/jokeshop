@@ -10,82 +10,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>msa-account</artifactId>
+    <packaging>pom</packaging>
 
-    <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
-    </properties>
-
-
-    <dependencies>
-
-        <!-- web服务依赖开始 -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-        </dependency>
-        <!-- web服务依赖结束-->
+    <modules>
+        <module>msa-account-api</module>
+        <module>msa-account-app</module>
+        <module>msa-account-domain</module>
+    </modules>
 
 
-        <!-- Eureka Client 依赖-->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-        </dependency>
-
-        <!-- 持久层选择 mybatis-plus  -->
-        <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus-boot-starter</artifactId>
-        </dependency>
-
-        <!-- 集成 Spring Cloud Security -->
-<!--        <dependency>-->
-<!--            <groupId>org.springframework.cloud</groupId>-->
-<!--            <artifactId>spring-cloud-starter-oauth2</artifactId>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>org.springframework.cloud</groupId>-->
-<!--            <artifactId>spring-cloud-starter-security</artifactId>-->
-<!--        </dependency>-->
-
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <scope>provided</scope>
-        </dependency>
-
-
-
-        <!-- 引入swagger -->
-        <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-boot-starter</artifactId>
-        </dependency>
-
-        <!-- 服务监控开始 -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
-        </dependency>
-        <!-- 服务监控结束 -->
-
-        <!-- 模块依赖开始 -->
-        <dependency>
-            <groupId>com.albusxing</groupId>
-            <artifactId>msa-common</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.albusxing</groupId>
-            <artifactId>msa-feign</artifactId>
-        </dependency>
-        <!-- 模块依赖结束 -->
-
-
-    </dependencies>
 
 </project>
